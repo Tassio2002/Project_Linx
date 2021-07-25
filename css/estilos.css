@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Este layout é focado na simplicidade e no minimalismo, o objetivo,
+é passar a informação sem chamar muita atenção. Utilizarei cores leves
+como o cinza e o branco, sempre trabalhando com sutileza.*/
+html,body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    padding: 40px 2%;
+    min-height: 750px ;
+    background-image: url(../imagens/lince_banner.jpg);
+    background-size: cover; 
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+header nav{
+    float: right;
+}
+
+nav.mobile-menu{
+    width: 32px;
+    height: 32px;
+    background-image: url(../imagens/menu-icon.png);
+    background-size: 100% 100%;
+    display: none;
+    cursor: pointer;
+}
+
+nav.mobile-menu:hover ul{
+    opacity: 1;
+}
+
+nav.mobile-menu ul{
+    opacity: 0;
+    transition: 1s;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    text-align: center;
+    list-style-type: none;
+    background-color: white;
+}
+
+nav.mobile-menu ul li{
+    border-bottom: 1px solid rgba(150, 141, 141, 0.466);
+    padding: 8px 0;
+    transition: 1s;
+}
+
+nav.mobile-menu ul li:hover{
+    background-color: cornsilk;
+}
+
+nav.mobile-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header .logo{
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-image: url(../imagens/logo.png);
+    background-size: 80px;
+}
+
+header nav.desktop-menu ul{
+    list-style-type: none;
+}
+header nav.desktop-menu li{
+    float: left;
+}
+
+header nav.desktop-menu li a{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 15px;
+    color: rgba(65, 57, 57, 0.767);
+}
+
+.chamada-1{
+    float: right;
+    max-width: 600px;
+    margin: 180px 0;
+}
+
+.chamada-1 h2{
+    font-size: 32px;
+    font-weight: lighter;
+    color: rgb(95, 83, 83);
+}
+
+.chamada-1 p{
+    font-size: 19px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgba(33, 65, 141, 0.589);
+}
+
+section.s1{
+    width: 100%;
+    height: 400px;
+    padding: 0 2%;
+    background-color: rgb(193, 197, 202);  
+    border-top: 3px solid rgba(0, 0, 0, 0.5);  
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5); 
+    font-family: 'Nunito', sans-serif;
+}
+
+section.s1 .container{
+    max-width: 1000px;
+    height: calc(100% + 30px) ;
+}
+
+.text-s1{
+    width: 50%;
+    float: left;
+    margin-top: 45px;
+}
+
+.text-s1 h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-s1 p{
+    font-size: 19px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.text-s1 ul{
+    font-size: 16px;
+    list-style-position: outside;
+    padding-left: 15px;
+}
+
+.text-s1 li{
+    margin-top: 8px;
+}
+
+.bt-1 input[type=submit]{
+    width: 100px;
+    height: 44px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 44px;
+    border: none;
+    border-radius: 7px;
+    transition: 0.7s ;
+}
+
+.bt-1 input[type=submit]:hover{
+    width: 150px;
+}
+
+.bt-1 input[type=submit]:focus{
+    background-color: rgb(153, 153, 179);
+    border: none;
+}
+
+.device-s1{
+    float: left;
+    width: 50%;
+    height: 578px;
+    background-image: url(../imagens/lince-s1.png);
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    position: relative;
+    top: -100px;
+}
+
+section.s2{
+    padding: 0 2%;
+    background-color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+section.s2 .container{
+    max-width: 1000px;
+}
+
+section.s2 h2{
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+section.s2 p{
+    max-width: 800px;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+section.s2 img{
+    width: 80%;
+    margin-top: 10px;
+    position: relative;
+    top: 80px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.53);
+}
+
+section.s3{
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.p1{
+    width: 50%;
+    float: left;
+    padding:140px 0 90px 0;
+    background-color: gainsboro;
+}
+
+.wraper-p1{
+    max-width: 500px;
+    float: right;
+    padding: 0 30px;
+}
+
+.p1 h2{
+    font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.p1 p{
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+.p2{
+    width: 50%;
+    float: left;
+    padding:140px 0 80px 0;
+    background-color: white;
+}
+
+.sobre{
+    float: left;
+    max-width: 500px;
+    padding-left: 30px;
+}
+
+.titulo{
+    width: 100%;
+    float: left;
+}
+
+.wraper-titulo{
+    width: calc(100%-40px);
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.wraper-titulo p{
+    color: red;
+}
+
+.titulo h2{
+    padding-right: 20px;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.titulo .img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    background-image: url(../imagens/lince\ euroasiatico.jpg);
+    background-size: 80px 80px;
+    border-radius: 45px;
+    position: relative;
+    top: -20px;
+}
+
+.texto p{
+    font-size: 17px;
+    line-height: 22px;
+    position: relative;
+    top: -15px;
+}
+
+.slider-bullets{
+    width: 100%;
+    float: left;
+    margin-top: 8px;
+    padding-left: 30px;
+}
+
+.slider-bullets span{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 8px;
+    border-radius: 8px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.s4{
+    padding: 100px 0;
+    background-color: rgb(193,170,137);
+}
+
+.form{
+    width: 50%;
+    float: left;
+    padding-left: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.form h2{
+    font-size: 23px;
+}
+
+.form p{
+    max-width: 400px;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.form form{
+    margin-top: 15px;
+}
+
+.form form input[type=text]{
+    width: 90%;
+    max-width: 400px;
+    height: 50px;
+    padding-left: 8px;
+    margin-top: 8px;
+    line-height: 58px;
+    border: 1px solid gray;
+}
+
+.form form textarea{
+    width: 100%;
+    max-width: 400px;
+    height: 160px;
+    padding: 15px;  
+    margin-top: 8px;
+    border: 1px solid gray;
+    resize: none;
+}
+
+.form form input[type=submit]{
+    width: 63%;
+    height: 44px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 25px;
+    border: 0;
+    background-color: white;
+    color: black;
+}
+
+.form form input[type=submit]:hover{
+    background-color: cadetblue;
+}
+
+
+.map-legenda h3{
+    width: 500px;
+    float: left;
+    margin-top: 15px;
+    font-size: 23px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    border: 5px solid gray;
+}
+
+footer{
+    padding: 25px 2%;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+}
+
+/*media queies*/
+@media screen and (max-width: 1360px){
+    .chamada-1{
+        max-width: 300px;
+        float: none;
+    }
+
+    section.s1{
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+    }
+
+    .device-s1{
+        display: none;
+    }
+
+    .text-s1{
+        width: 100%;
+        float: none;
+        display: inline-block;
+        position: static;
+        margin-top: 0;
+    }
+
+    .text-s1 h2{
+        font-size: 35px;
+    }
+
+
+    .text-s1 ul li{
+        float: none;
+        list-style-type: none;
+        font-size: 22px;
+    }
+
+    .bt-1{
+        display: inline-block;
+    }
+
+    section.s2{
+        padding: 40px 2%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 40px 2%;
+
+    }
+
+    nav.desktop-menu{
+        display: none;
+    }
+
+    nav.mobile-menu{
+        display: block;
+    }
+
+    .titulo .img{
+        position: initial;
+    }
+
+    .texto p{
+        position: initial;
+    }
+
+    .p2{
+        padding:140px 0 58px 0;
+    }
+
+    section.s4 .container{
+        text-align: center;
+        float: none;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .form p{
+        display: inline-block;
+    }
+
+    .map-wraper{
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 4%;
+    }
+
+    .map-wraper3{
+        width: 80%;
+        padding-top: 80%;
+        max-width: none;
+        margin-top: 10px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .map-wraper2{
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+    .p1{
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    .p2{
+        width: 100%;
+    }
+
+    section.s2 img{
+        margin-top: -30px;
+    }
+
+    footer{
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1){
+        float: none;
+    }
+    
+    footer p:nth-of-type(2){
+        float: none;
+        margin-top: 10px;
+    }
+}
+
